@@ -1,0 +1,16 @@
+export const categories = {
+  electronics: "Electronics",
+  chinaSet: "china set",
+  luxurious: "luxurious",
+  dinnerSet: "dinner set",
+  classic: "classic set",
+  giftware: "giftware set",
+  Electroplating: "giftware set",
+  crockery: "crockery",
+  cookware: "cookware",
+  healthFitness: "healthFitness",
+  kitchenAppliances: "kitchenAppliances",
+  homeAppliances: "homeAppliances",
+  kitchenware: "kitchenware",
+  sportsFitness: "sportsFitness",
+};
