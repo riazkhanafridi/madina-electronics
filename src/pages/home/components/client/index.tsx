@@ -34,7 +34,7 @@ const ClientPage = memo(function ClientPage() {
       <h1 className="font-bold text-2xl text-center">
         What Clients Are Saying
       </h1>
-      <div className=" mt-6 flex justify-center gap-6">
+      <div className=" mt-6 flex flex-wrap justify-center gap-6">
         {clientData.map((it) => (
           <ClientCard
             key={it.id} // Unique key for each item

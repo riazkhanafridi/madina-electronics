@@ -13,7 +13,7 @@ const ProductCard = memo((props: ProductCardProps) => {
   return (
     <>
       <div
-        className=" rounded-xl  shadow-lg hover:shadow-xl transition-shadow cursor-pointer flex flex-col  mt-10 "
+        className=" rounded-xl   cursor-pointer flex flex-col  mt-10 "
         onClick={props.onClick}
       >
         <img

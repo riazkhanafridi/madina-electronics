@@ -24,7 +24,7 @@ const OurCategories = memo(function OurCategories() {
   return (
     <>
       <h1 className="font-bold text-3xl text-center mt-6">Our Categories</h1>
-      <div className="grid grid-cols-4 gap-y-16 mt-10 px-8 ">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-y-16 mt-10 px-8 grid-cols-1">
         {categoriesData.map((category) => (
           <CategoriesCard
             key={category.id}

@@ -8,10 +8,10 @@ const AboutMe = memo(function AboutMe() {
 
   return (
     <div>
-      <div className="w-full flex justify-between items-center px-4  ">
-        <div className="flex flex-col w-[40%]  px-16">
+      <div className="w-full sm:flex sm:flex-row flex-col justify-between items-center px-4">
+        <div className="flex flex-col md:w-[70%] w-full   px-16">
           <h1 className="font-bold text-xl ">About Me</h1>
-          <p className="text-lg text-gray-600 ">
+          <p className="text-lg text-gray-600">
             Welcome to Madina Electronics, your one-stop shop for all things
             electronics and cooking. Founded by Muhammad Gull, a passionate
             expert in both the tech and culinary fields, Madina Electronics
@@ -21,7 +21,7 @@ const AboutMe = memo(function AboutMe() {
             the latest innovations.
           </p>
         </div>
-        <div className="">
+        <div className="md:w-[30%] w-full py-16">
           <img
             src={imageSrc}
             alt="contact"

@@ -1,12 +1,12 @@
-import { PhoneIcon } from "lucide-react";
+import { Mail, PhoneIcon } from "lucide-react";
 import { memo } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = memo(function Footer() {
   return (
     <div className="bg-colors-footerBackground w-full mt-10">
-      <div className="flex justify-between w-[80%] px-4 py-6">
-        <div className="flex flex-col w-full">
+      <div className="sm:flex sm:flex-row flex-col justify-between w-[80%] px-4 py-6 ">
+        <div className="flex flex-col w-full ">
           <h1 className="text-colors-orange font-bold text-xl">
             Madina Electronics
           </h1>
@@ -18,7 +18,7 @@ const Footer = memo(function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col  w-full">
+        <div className="flex flex-col  w-full p-4">
           <h1 className="text-colors-orange font-bold text-xl">Quick Links</h1>
           <ul className=" flex flex-col gap-4 list-disc pl-5 text-white">
             <li>
@@ -43,11 +43,15 @@ const Footer = memo(function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-4 p-8">
           <h1 className="font-bold text-xl text-colors-orange">Follow Us</h1>
           <div className="flex gap-2">
             <PhoneIcon className="text-white" />
             <h1 className="text-white">+923333000242</h1>
+          </div>
+          <div className="flex gap-2">
+            <Mail className="text-white"/>
+            <p className="text-white">muhammadgul@madinaelectronicsshop.com</p>
           </div>
           <p className="text-white">
             Address: Khalid shopping plaza shop no 5 block A karkhano market

@@ -1,7 +1,6 @@
 import { memo, useMemo } from "react";
 import { Images } from "../../../../assets";
 import { Button } from "../../../../components/ui/button";
-import { Input } from "../../../../components/ui/input";
 import CustomCarousel from "../../../../components/slider";
 
 const OurHero = memo(function OurHero() {
@@ -16,8 +15,8 @@ const OurHero = memo(function OurHero() {
 
   return (
     <>
-      <div className="flex w-full p-4 justify-between items-center gap-x-8 ">
-        <div className="w-1/2">
+      <div className="sm:flex sm:flex-row flex-col w-full sm:p-4 justify-between items-center gap-x-8 p-16 ">
+        <div className="md:w-1/2 w-full">
           <h1 className="text-colors-darkGray font-bold text-3xl mb-4">
             welcome to Madina Electronics & Crockery
           </h1>
@@ -39,7 +38,7 @@ const OurHero = memo(function OurHero() {
             </Button>
           </div>
         </div>
-        <div className="w-1/2 h-full ">
+        <div className="md:w-1/2  w-full">
           <CustomCarousel>
             {imageSrc.map((image) => (
               <div key={image.id} className="slide">

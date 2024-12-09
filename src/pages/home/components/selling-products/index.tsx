@@ -17,7 +17,7 @@ const SellingProducts = memo(function SellingProducts() {
         Our Best Selling Products
       </h1>
 
-      <div className="grid grid-cols-3 gap-6 mx-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 md:mx-10 grid-cols-1 mx-5">
         {products.slice(0, 9).map((it) => {
           return (
             <ProductCard

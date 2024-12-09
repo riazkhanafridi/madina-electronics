@@ -8,7 +8,7 @@ type TTeamCardProps = {
 
 const TeamCard = memo(function useMemo(props: TTeamCardProps) {
   return (
-    <div className="border-2 w-[400px] h-[500px] shadow-md rounded-xl flex flex-col justify-between">
+    <div className="border-2 md:w-[400px] h-[500px] shadow-md rounded-xl flex flex-col justify-between w-full">
       <div className="  h-[350px] w-full">
         <img src={props.image} className=" h-full w-full overflow-hidden " />
       </div>

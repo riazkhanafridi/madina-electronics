@@ -5,9 +5,9 @@ import { Button } from "../../../../components/ui/button";
 const ContactForm = memo(function ContactForm() {
   return (
     <>
-      <div className="w-full flex flex-col justify-center items-center mt-6 bg-colors-contactFormBackground">
+      <div className="w-full flex flex-col justify-center items-center mt-6 bg-colors-contactFormBackground px-4">
         <h1 className="font-bold text-white text-2xl mt-6">Get in Touch</h1>
-        <div className="w-[40%] bg-colors-darkGray shadow-md px-4 rounded-xl h-[80vh] flex flex-col gap-y-6 py-6 mb-6 mt-6">
+        <div className="md:w-[40%] bg-colors-darkGray shadow-md px-4 rounded-xl h-full flex  flex-col gap-y-6 py-6 mb-6 mt-6 w-full">
           <p className="text-white font-bold ">Name</p>
           <Input
             className="w-full bg-white rounded-xl py-6 text-gray-400"
@@ -28,8 +28,8 @@ const ContactForm = memo(function ContactForm() {
             className="w-full bg-white rounded-xl py-6 text-gray-400"
             placeholder="Your Message"
           />
-          <Button className="hover:bg-blue-800 font-semibold text-white rounded-xl py-6">
-            {" "}
+          <Button className="hover:bg-blue-800 font-semibold text-white rounded-xl py-6 w-full mt-10">
+       
             Send Message
           </Button>
         </div>

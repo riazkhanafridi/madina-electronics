@@ -12,8 +12,8 @@ const About = memo(function About() {
 
   return (
     <div>
-      <div className="flex w-full p-4 justify-between items-center gap-x-8">
-        <div className="w-1/2">
+      <div className="sm:flex sm:flex-row flex-col w-full p-4 justify-between items-center gap-x-8">
+        <div className="md:w-1/2 w-full">
           <h1 className="text-colors-darkGray font-bold text-3xl mb-4">
             About
           </h1>
@@ -25,7 +25,7 @@ const About = memo(function About() {
             range of products to meet your needs.
           </p>
         </div>
-        <div className="w-1/2 my-16 ">
+        <div className="md:w-1/2 my-16 w-full ">
           <img src={imageSrc} alt="contact" className="h-[500px] w-full" />
         </div>
       </div>

@@ -24,7 +24,7 @@ const Product = memo(function Product() {
       <h1 className="text-center text-2xl font-bold text-colors-darkGray">
         Our Best Products
       </h1>
-      <div className="grid grid-cols-3 gap-6 mx-10 ">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mx-10 ">
         {products.slice(0, visibleProducts).map((it) => {
           return (
             <ProductCard

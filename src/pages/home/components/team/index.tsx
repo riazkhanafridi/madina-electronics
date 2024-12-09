@@ -23,12 +23,18 @@ const Team = memo(function Team() {
         title: "( Sale Associate )",
         image: Images.team.saleAssciative,
       },
+      {
+        id: 4,
+        name: "Umar khan",
+        title: "( Sale executive )",
+        image: Images.team.Saleexecutive,
+      },
     ];
   }, []);
   return (
     <div className="mt-6">
       <h1 className="font-semibold text-2xl px-4">Meet Our Experienced Team</h1>
-      <div className="mt-6 gap-4 grid grid-cols-3 px-6">
+      <div className="mt-6 gap-4 grid lg:grid-cols-3 md:grid-cols-2 px-6 grid-cols-1">
         {TeamData.map((it) => (
           <TeamCard
             key={it.id}
